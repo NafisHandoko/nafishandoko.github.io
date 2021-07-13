@@ -80,11 +80,12 @@ p.subheading{
 a.cta-1{
     background-color: var(--def-black);
     border: 1px solid var(--def-black);
+    border-right-color: transparent;
     border-top-left-radius: var(--def-border-radius);
     border-bottom-left-radius: var(--def-border-radius);
     color: white;
     float: left;
-    padding: 15px;
+    padding: 8px 12px 8px 12px;
 }
 
 a.cta-1:hover{
@@ -94,10 +95,11 @@ a.cta-1:hover{
 
 a.cta-2{
     border: 1px solid var(--def-black);
+    border-left-color: transparent;
     border-top-right-radius: var(--def-border-radius);
     border-bottom-right-radius: var(--def-border-radius);
     float: left;
-    padding: 15px;
+    padding: 8px 12px 8px 12px;
 }
 
 a.cta-2:hover{
@@ -178,24 +180,6 @@ a.cta-2:hover{
     gap: 40px;
 }
 
-.portfolio-img{
-    max-width: 100%;
-    border-radius: var(--def-border-radius);
-}
-
-.portfolio-items{
-    border-radius: var(--def-border-radius);
-}
-
-.portfolio-items-2{
-    height: 500px;
-}
-
-.items1{background-image: url(img/cokrocollection.png);background-size: contain;background-position: center;}
-.items2{background-image: url(img/cokrocollection.png);background-size: contain;background-position: center;}
-.items3{background-image: url(img/cokrocollection.png);background-size: contain;background-position: center;}
-.items4{background-image: url(img/cokrocollection.png);background-size: contain;background-position: center;}
-
 @media (max-width: 768px){
     .about-skills .container{
         grid-template: 
@@ -205,7 +189,15 @@ a.cta-2:hover{
     }
 }
 
-
+@media (max-width:400px){
+    .container{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    nav{
+        padding-top: 40px;
+    }
+}
 
 .hovereffect {
     width:100%;
@@ -215,6 +207,7 @@ a.cta-2:hover{
     position:relative;
     text-align:center;
     cursor:default;
+    border-radius: var(--def-border-radius);
 }
     
 .hovereffect .overlay {
